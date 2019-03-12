@@ -1,0 +1,71 @@
+
+    #傳送貼圖
+    message = {
+      "type": "sticker",
+      "packageId": "1",
+      "stickerId": "1"
+    }
+
+    #傳送圖片
+    message = {
+      "type": "image",
+      "originalContentUrl": "圖片網址",
+      "previewImageUrl": "縮圖網址"
+    }
+
+    #傳送影片
+    message = {
+      "type": "video",
+      "originalContentUrl": "影片網址",
+      "previewImageUrl": "縮圖網址"
+    }
+
+    #傳送聲音
+    message = {
+      "type": "audio",
+      "originalContentUrl": "聲音檔網址",
+      "duration": 60000
+    }
+
+    #傳送地標
+    message = {
+      "type": "location",
+      "title": "第一行文字",
+      "address": "第二行文字",
+      "latitude": 35.65910807942215,
+      "longitude": 139.70372892916203
+    }
+
+    #傳送影像地圖(Imagemap)
+    message = {
+      "type": "imagemap",
+      "baseUrl": "圖片網址的一部分",
+      "altText": "在不支援顯示影像地圖的地方顯示的文字",
+      "baseSize": {
+        "height": 1040,
+        "width": 1040
+      },
+      "actions": [
+        {
+          "type": "uri",
+          "linkUri": "https://www.kamigo.tw/",
+          "label": "https://www.kamigo.tw/",
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 520,
+            "height": 1040
+          }
+        },
+        {
+          "type": "message",
+          "text": "傳送文字",
+          "area": {
+            "x": 520,
+            "y": 0,
+            "width": 520,
+            "height": 1040
+          }
+        }
+      ]
+    }
