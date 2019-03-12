@@ -86,7 +86,7 @@ def handle_message(event):
 
     message = ImageSendMessage(original_content_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png',preview_image_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png')  
     
-    message = VideoSendMessage(original_content_url='https://www.youtube.com/watch?v=YKiMrg6rgYQ', preview_image_url='https://www.youtube.com/watch?v=YKiMrg6rgYQ'))
+    message = VideoSendMessage(original_content_url='https://www.youtube.com/watch?v=YKiMrg6rgYQ', preview_image_url='https://pic2.zhimg.com/80/7063a2a677c84025b9a10cf9f6e646d8_hd.jpg')
 
     replay_message(event,message)
  
