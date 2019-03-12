@@ -9,7 +9,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    MessageEvent,TextMessage,TextSendMessage,StickerSendMessage,ImageSendMessage,TemplateSendMessage,ButtonsTemplate,PostbackTemplateAction
+    MessageEvent,TextMessage,TextSendMessage,StickerSendMessage,ImageSendMessage,VideoSendMessage,TemplateSendMessage,ButtonsTemplate,PostbackTemplateAction
 )
 import os
 app = Flask(__name__)
@@ -86,6 +86,8 @@ def handle_message(event):
 
     message = ImageSendMessage(original_content_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png',preview_image_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png')  
     
+    message = VideoSendMessage(original_content_url='https://www.youtube.com/watch?v=YKiMrg6rgYQ', preview_image_url='https://www.youtube.com/watch?v=YKiMrg6rgYQ'))
+
     replay_message(event,message)
  
 def replay_message(event,text):
