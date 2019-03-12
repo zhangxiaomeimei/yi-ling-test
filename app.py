@@ -15,9 +15,9 @@ import os
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('D839RrQau1FTUSAwivyvxlz23vFV7gmBitm7XC91k91LX9tzXu2+c3+RzB/iIEeOS9jCPN1RlLRTtHvkYR15pirANB51USl+rdYgWi6V0mweBw8E5QNGgd7VeKvz+XMvNniKYH1nNNcO4IAE/C59kQdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi(os.environ['lineToken'])
 # Channel Secret
-handler = WebhookHandler('a23f2e3d9172dd81ee5d480361d5a665')
+handler = WebhookHandler(os.environ['lineSecret'])
 
 
 # 監聽所有來自 /callback 的 Post Request
@@ -67,17 +67,17 @@ def handle_message(event):
         text2 = "林仁彥老師的專長為最佳化，辦公室在理工大樓八樓A16-815，辦公室電話05-271-7880。"
     if event.message.text.find("彭振昌")>=0:
         text2 = "彭振昌老師的專長為動態系統，辦公室在理工大樓八樓A16-822，辦公室電話05-271-7878。"
-    #conn=psycopg2.connect("host=120.113.174.17 port=5432 dbname=mathLineBot user=mathLineBot password=mk8559")
-    #cur = conn.cursor()
+    conn=psycopg2.connect("host=120.113.174.17 port=5432 dbname=mathLineBot user=mathLineBot password=mk8559")
+    cur = conn.cursor()
     sql = """SELECT "ID", "messageList", "replyList" FROM public."TalkingList" WHERE "messageList" LIKE '%""" + event.message.text + "%'" 
-    #cur.execute(sql)
-    #rows = cur.fetchall()
+    cur.execute(sql)
+    rows = cur.fetchall()
     #text2 = "According to your input, my answer is "
-    #text2 = ""
-    #for row in rows:
-        #text2 = text2 + str(row[2]) 
-    #if text2 == "":
-        #text2 = "嘉義大學應用數學系有一個熱心的曾采雯助教，她的辦公室電話是05-2717861"
+    text2 = ""
+    for row in rows:
+        text2 = text2 + str(row[2]) 
+    if text2 == "":
+        text2 = "嘉義大學應用數學系有一個熱心的曾采雯助教，她的辦公室電話是05-2717861"
     
 
     message = TextSendMessage(text=text2) 
