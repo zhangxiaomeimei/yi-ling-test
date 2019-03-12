@@ -82,7 +82,9 @@ def handle_message(event):
 
     message = TextSendMessage(text=text2)
 
-    message = StickerSendMessage(package_id=1,sticker_id=2)  
+    message = StickerSendMessage(package_id=1,sticker_id=2)
+
+    (original_content_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png',preview_image_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png')  
     
     replay_message(event,message)
  
