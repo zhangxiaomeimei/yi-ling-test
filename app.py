@@ -86,7 +86,7 @@ def handle_message(event):
 
     message = ImageSendMessage(original_content_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png',preview_image_url='https://applealmond.com/wp-content/uploads/2018/11/1541078537-090bd6987af814bfa1d1a0bfd919f47d.png')  
     
-    message = VideoSendMessage(original_content_url='https://www.youtube.com/watch?v=YKiMrg6rgYQ', preview_image_url='https://pic2.zhimg.com/80/7063a2a677c84025b9a10cf9f6e646d8_hd.jpg')
+    message = VideoSendMessage(original_content_url='https://r4---sn-ipoxu-u2xr.googlevideo.com/videoplayback?keepalive=yes&requiressl=yes&ipbits=0&sparams=aitags,clen,dur,ei,expire,gir,id,ip,ipbits,itag,keepalive,lmt,mime,mip,mm,mn,ms,mv,pl,requiressl,source&c=WEB&mime=video%2Fmp4&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278&itag=137&gir=yes&expire=1552430408&clen=71377176&ei=6OCHXIaYGYO_gAPDwpbICw&pl=22&fvip=4&source=youtube&ip=35.185.129.34&key=cms1&lmt=1525509226927944&id=o-AJsdNHECc112eddLTNPEsBLIkabpm7CFq6Bs_KxcITcv&dur=428.708&signature=3A46A12FB31D8AC4367AFCD260BA58B6CCE5E1E5.817A2FF22D667BA6486303A5EF7265729A8F650B&ratebypass=yes&cms_redirect=yes&mip=60.249.255.198&mm=31&mn=sn-ipoxu-u2xr&ms=au&mt=1552408776&mv=m', preview_image_url='https://pic2.zhimg.com/80/7063a2a677c84025b9a10cf9f6e646d8_hd.jpg')
 
     replay_message(event,message)
  
