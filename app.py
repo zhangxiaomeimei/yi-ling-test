@@ -114,7 +114,7 @@ def handle_message(event):
         template=ButtonsTemplate(
             title='這是ButtonsTemplate',
             text='ButtonsTemplate可以傳送text,uri',
-            thumbnail_image_url='顯示在開頭的大圖片網址',
+            thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
             actions=[
                 MessageTemplateAction(
                     label='ButtonsTemplate',
@@ -122,7 +122,7 @@ def handle_message(event):
                 ),
                 URITemplateAction(
                     label='VIDEO1',
-                    uri='影片網址'
+                    uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
                 ),
                 PostbackTemplateAction(
                     label='postback',
