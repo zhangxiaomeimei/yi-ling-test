@@ -84,9 +84,9 @@ def handle_message(event):
 
     Video_Message = VideoSendMessage(original_content_url='影片網址', preview_image_url='預覽的圖片網址')
 
-    # Audio_Message = AudioSendMessage(original_content_url='音訊網址', duration=100000)
+    Audio_Message = AudioSendMessage(original_content_url='https://sv18.onlinevideoconverter.com/download?file=e4h7e4g6c2a0h7', duration=100000)
 
-    Location_Message = LocationSendMessage(title='my location', address='Tainan', latitude=22.994821, longitude=120.196452)
+    #Location_Message = LocationSendMessage(title='my location', address='Tainan', latitude=22.994821, longitude=120.196452)
 
     # Imagemap_Message = ImagemapSendMessage(
     #     base_url='',
@@ -109,124 +109,124 @@ def handle_message(event):
     # )
 
 
-    Buttons_Template = TemplateSendMessage(
-        alt_text='Buttons Template',
-        template=ButtonsTemplate(
-            title='這是ButtonsTemplate',
-            text='ButtonsTemplate可以傳送text,uri',
-            thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-            actions=[
-                MessageTemplateAction(
-                    label='ButtonsTemplate',
-                    text='ButtonsTemplate'
-                ),
-                URITemplateAction(
-                    label='VIDEO1',
-                    uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
-                ),
-                PostbackTemplateAction(
-                    label='postback',
-                    text='postback text',
-                    data='postback1'
-                )
-            ]
-        )
-    )
+    # Buttons_Template = TemplateSendMessage(
+    #     alt_text='Buttons Template',
+    #     template=ButtonsTemplate(
+    #         title='這是ButtonsTemplate',
+    #         text='ButtonsTemplate可以傳送text,uri',
+    #         thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #         actions=[
+    #             MessageTemplateAction(
+    #                 label='ButtonsTemplate',
+    #                 text='ButtonsTemplate'
+    #             ),
+    #             URITemplateAction(
+    #                 label='VIDEO1',
+    #                 uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+    #             ),
+    #             PostbackTemplateAction(
+    #                 label='postback',
+    #                 text='postback text',
+    #                 data='postback1'
+    #             )
+    #         ]
+    #     )
+    # )
 
       
-    Confirm_Template = TemplateSendMessage(
-        alt_text='目錄 template',
-        template=ConfirmTemplate(
-            title='這是ConfirmTemplate',
-            text='這就是ConfirmTemplate,用於兩種按鈕選擇',
-            actions=[                              
-                PostbackTemplateAction(
-                    label='Y',
-                    text='Y',
-                    data='action=buy&itemid=1'
+    # Confirm_Template = TemplateSendMessage(
+    #     alt_text='目錄 template',
+    #     template=ConfirmTemplate(
+    #         title='這是ConfirmTemplate',
+    #         text='這就是ConfirmTemplate,用於兩種按鈕選擇',
+    #         actions=[                              
+    #             PostbackTemplateAction(
+    #                 label='Y',
+    #                 text='Y',
+    #                 data='action=buy&itemid=1'
 
-                ),
-                MessageTemplateAction(
-                    label='N',
-                    text='N'
-                )
-            ]
-        )
-    )
+    #             ),
+    #             MessageTemplateAction(
+    #                 label='N',
+    #                 text='N'
+    #             )
+    #         ]
+    #     )
+    # )
 
-    Carousel_Template = TemplateSendMessage(
-        alt_text='Carousel template',
-        template=CarouselTemplate(
-            columns=[
-                CarouselColumn(
-                    thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-                    title='this is menu1',
-                    text='description1',
-                    actions=[
-                        PostbackTemplateAction(
-                            label='postback1',
-                            text='postback text1',
-                            data='action=buy&itemid=1'
-                        ),
-                        MessageTemplateAction(
-                            label='message1',
-                            text='message text1'
-                        ),
-                        URITemplateAction(
-                            label='uri1',
-                            uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
-                        )
-                    ]
-                ),
-                CarouselColumn(
-                    thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-                    title='this is menu2',
-                    text='description2',
-                    actions=[
-                        PostbackTemplateAction(
-                            label='postback2',
-                            text='postback text2',
-                            data='action=buy&itemid=2'
-                        ),
-                        MessageTemplateAction(
-                            label='message2',
-                            text='message text2'
-                        ),
-                        URITemplateAction(
-                            label='連結2',
-                            uri='https://www.youtube.com/watch?v=GuqY5OViunk'
-                        )
-                    ]
-                )
-            ]
-        )
-    )
+    # Carousel_Template = TemplateSendMessage(
+    #     alt_text='Carousel template',
+    #     template=CarouselTemplate(
+    #         columns=[
+    #             CarouselColumn(
+    #                 thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #                 title='this is menu1',
+    #                 text='description1',
+    #                 actions=[
+    #                     PostbackTemplateAction(
+    #                         label='postback1',
+    #                         text='postback text1',
+    #                         data='action=buy&itemid=1'
+    #                     ),
+    #                     MessageTemplateAction(
+    #                         label='message1',
+    #                         text='message text1'
+    #                     ),
+    #                     URITemplateAction(
+    #                         label='uri1',
+    #                         uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+    #                     )
+    #                 ]
+    #             ),
+    #             CarouselColumn(
+    #                 thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #                 title='this is menu2',
+    #                 text='description2',
+    #                 actions=[
+    #                     PostbackTemplateAction(
+    #                         label='postback2',
+    #                         text='postback text2',
+    #                         data='action=buy&itemid=2'
+    #                     ),
+    #                     MessageTemplateAction(
+    #                         label='message2',
+    #                         text='message text2'
+    #                     ),
+    #                     URITemplateAction(
+    #                         label='連結2',
+    #                         uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+    #                     )
+    #                 ]
+    #             )
+    #         ]
+    #     )
+    # )
 
-    Image_Carousel = TemplateSendMessage(
-        alt_text='目錄 template',
-        template=ImageCarouselTemplate(
-            columns=[
-                ImageCarouselColumn(
-                    image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-                    action=PostbackTemplateAction(
-                        label='postback1',
-                        text='postback text1',
-                        data='action=buy&itemid=1'
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-                    action=PostbackTemplateAction(
-                        label='postback2',
-                        text='postback text2',
-                        data='action=buy&itemid=2'
-                    )
-                )
-            ]
-        )
-    )
+    # Image_Carousel = TemplateSendMessage(
+    #     alt_text='目錄 template',
+    #     template=ImageCarouselTemplate(
+    #         columns=[
+    #             ImageCarouselColumn(
+    #                 image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #                 action=PostbackTemplateAction(
+    #                     label='postback1',
+    #                     text='postback text1',
+    #                     data='action=buy&itemid=1'
+    #                 )
+    #             ),
+    #             ImageCarouselColumn(
+    #                 image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #                 action=PostbackTemplateAction(
+    #                     label='postback2',
+    #                     text='postback text2',
+    #                     data='action=buy&itemid=2'
+    #                 )
+    #             )
+    #         ]
+    #     )
+    # )
 
-    replay_message(event,Image_Carousel)
+    replay_message(event,Audio_Message)
 
  
 def replay_message(event,text):
