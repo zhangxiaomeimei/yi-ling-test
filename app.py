@@ -82,9 +82,9 @@ def handle_message(event):
     #傳送圖片
     Image_Message = ImageSendMessage(original_content_url='https://ithelp.ithome.com.tw/upload/images/20180103/20107144nFRc5tsPkp.png',preview_image_url='https://ithelp.ithome.com.tw/upload/images/20180103/20107144nFRc5tsPkp.png')
 
-    Video_Message = VideoSendMessage(original_content_url='影片網址', preview_image_url='預覽的圖片網址')
+    Video_Message = VideoSendMessage(original_content_url='https://jylin.myqnapcloud.com/test.mp4', preview_image_url='https://ithelp.ithome.com.tw/upload/images/20180103/20107144nFRc5tsPkp.png')
 
-    Audio_Message = AudioSendMessage(original_content_url='https://sv18.onlinevideoconverter.com/download?file=e4h7e4g6c2a0h7', duration=100000)
+    #Audio_Message = AudioSendMessage(original_content_url='https://sv18.onlinevideoconverter.com/download?file=e4h7e4g6c2a0h7', duration=100000)
 
     #Location_Message = LocationSendMessage(title='my location', address='Tainan', latitude=22.994821, longitude=120.196452)
 
