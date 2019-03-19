@@ -94,7 +94,7 @@ def handle_message(event):
         base_size=BaseSize(height=520, width=520),
         actions=[
             URIImagemapAction(
-                link_uri='',
+                link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                 area=ImagemapArea(
                     x=174, y=65, width=707, height=416
                 )
