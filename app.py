@@ -89,7 +89,7 @@ def handle_message(event):
     #Location_Message = LocationSendMessage(title='my location', address='Tainan', latitude=22.994821, longitude=120.196452)
 
     Imagemap_Message = ImagemapSendMessage(
-        base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+        base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png',
         alt_text='this is an imagemap',
         base_size=BaseSize(height=520, width=520),
         actions=[
