@@ -91,18 +91,18 @@ def handle_message(event):
     Imagemap_Message = ImagemapSendMessage(
         base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
         alt_text='this is an imagemap',
-        base_size=BaseSize(height=520, width=520),
+        base_size=BaseSize(height=1040, width=1040),
         actions=[
             URIImagemapAction(
                 link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                 area=ImagemapArea(
-                    x=174, y=65, width=707, height=416
+                    x=0, y=0, width=520, height=1040
                 )
             ),
             MessageImagemapAction(
                 text='hello',
                 area=ImagemapArea(
-                    x=520, y=0, width=520, height=520
+                    x=520, y=0, width=520, height=1040
                 )
             )
         ]
