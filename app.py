@@ -88,25 +88,25 @@ def handle_message(event):
 
     #Location_Message = LocationSendMessage(title='my location', address='Tainan', latitude=22.994821, longitude=120.196452)
 
-    # Imagemap_Message = ImagemapSendMessage(
-    #     base_url='',
-    #     alt_text='this is an imagemap',
-    #     base_size=BaseSize(height=520, width=520),
-    #     actions=[
-    #         URIImagemapAction(
-    #             link_uri='',
-    #             area=ImagemapArea(
-    #                 x=174, y=65, width=707, height=416
-    #             )
-    #         ),
-    #         MessageImagemapAction(
-    #             text='hello',
-    #             area=ImagemapArea(
-    #                 x=520, y=0, width=520, height=520
-    #             )
-    #         )
-    #     ]
-    # )
+    Imagemap_Message = ImagemapSendMessage(
+        base_url='',
+        alt_text='this is an imagemap',
+        base_size=BaseSize(height=520, width=520),
+        actions=[
+            URIImagemapAction(
+                link_uri='',
+                area=ImagemapArea(
+                    x=174, y=65, width=707, height=416
+                )
+            ),
+            MessageImagemapAction(
+                text='hello',
+                area=ImagemapArea(
+                    x=520, y=0, width=520, height=520
+                )
+            )
+        ]
+    )
 
 
     # Buttons_Template = TemplateSendMessage(
@@ -226,7 +226,7 @@ def handle_message(event):
     #     )
     # )
 
-    replay_message(event,Audio_Message)
+    replay_message(event,Imagemap_Message)
 
  
 def replay_message(event,text):
