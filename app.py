@@ -344,27 +344,27 @@ def handle_message(event):
         replay_message(event,Imagemap_Message)
         return 0
 
-    # if event.message.text == "嗨老師":
-    # 	Confirm_Template = TemplateSendMessage(
-    #         alt_text='目錄 template',
-    #         template=ConfirmTemplate(
-    #             title='這是ConfirmTemplate',
-    #             text='這就是ConfirmTemplate,用於兩種按鈕選擇',
-    #             actions=[                              
-    #                 URITemplateAction(
-    #                     label='看教學影片',
-    #                     uri='https://www.youtube.com/watch?v=GuqY5OViunk'
-    #                 ),
-    #                 URITemplateAction(
-    #                     label='去雲端找講義',
-    #                     uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
-    #                 )
-    #             ]
-    #         )
-    #     )
-    #     replay_message(event,Confirm_Template)
-    #     return 0
-
+    if event.message.text == "嗨老師":
+    	Buttons_Template = TemplateSendMessage(
+            alt_text='Buttons Template',
+            template=ButtonsTemplate(
+                title='這是ButtonsTemplate',
+                text='ButtonsTemplate可以傳送text,uri',
+                thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+                actions=[
+                    MessageTemplateAction(
+                        label='微積分習題',
+                        text='微積分習題'
+                    ),
+                    MessageTemplateAction(
+                        label='講義',
+                        text='講義'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Buttons_Template)
+        return 0
 
     replay_message(event,Buttons_Template)
 
