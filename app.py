@@ -350,16 +350,15 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='這就是ConfirmTemplate,用於兩種按鈕選擇',
+                text='嗨老師',
                 actions=[                              
-                    PostbackTemplateAction(
-                        label='Y',
-                        text='Y',
-                        data='action=buy&itemid=1'
+                    URITemplateAction(
+                        label='點我看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
 
                     ),
                     URITemplateAction(
-                        label='N',
+                        label='帶我去雲端找講義',
                         uri='https://www.youtube.com/watch?v=GuqY5OViunk'
                     )
                 ]
