@@ -248,28 +248,7 @@ def handle_message(event):
 
     # replay_message(event,Image_Carousel)
 
-    # if event.message.text == "海報(<-解答點我)":
-    # 	Imagemap_Message = ImagemapSendMessage(
-    #         base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
-    #         alt_text='this is an imagemap',
-    #         base_size=BaseSize(height=1040, width=1040),
-    #         actions=[
-    #             URIImagemapAction(
-    #                 link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
-    #                 area=ImagemapArea(
-    #                     x=0, y=0, width=520, height=1040
-    #                 )
-    #             ),
-    #             MessageImagemapAction(
-    #                 text='hello',
-    #                 area=ImagemapArea(
-    #                     x=520, y=0, width=520, height=1040
-    #                 )
-    #             )
-    #         ]
-    #     )
-    #     replay_message(event,Imagemap_Message)
-    #     return 0
+
 
 
     Buttons_Template = TemplateSendMessage(
@@ -294,6 +273,30 @@ def handle_message(event):
             ]
         )
     )
+
+
+    if event.message.text == "海報(<-解答點我)":
+        Imagemap_Message = ImagemapSendMessage(
+            base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+            alt_text='this is an imagemap',
+            base_size=BaseSize(height=1040, width=1040),
+            actions=[
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=0, y=0, width=520, height=1040
+                    )
+                ),
+                MessageImagemapAction(
+                    text='hello',
+                    area=ImagemapArea(
+                        x=520, y=0, width=520, height=1040
+                    )
+                )
+            ]
+        )
+        replay_message(event,Imagemap_Message)
+        return 0
 
 
     replay_message(event,Buttons_Template)
