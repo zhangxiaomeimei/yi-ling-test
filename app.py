@@ -351,14 +351,15 @@ def handle_message(event):
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
                 text='嗨老師',
+                thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
                 actions=[                              
                     URITemplateAction(
-                        label='點我看教學影片',
+                        label='看教學影片',
                         uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
 
                     ),
                     URITemplateAction(
-                        label='帶我去雲端找講義',
+                        label='去雲端找講義',
                         uri='https://www.youtube.com/watch?v=GuqY5OViunk'
                     )
                 ]
