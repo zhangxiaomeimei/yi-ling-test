@@ -246,7 +246,7 @@ def handle_message(event):
         )
     )
 
-    replay_message(event,Carousel_Template)
+    replay_message(event,Image_Carousel)
 
     # if event.message.text.find("海報(<-解答點我)")>=0:
     # 	Imagemap_Message = ImagemapSendMessage(
