@@ -362,25 +362,8 @@ def handle_message(event):
                 ]
             )
         )
-
-    if event.message.text == "看教學影片":
-    	Confirm_Template = TemplateSendMessage(
-            alt_text='目錄 template',
-            template=ConfirmTemplate(
-                title='這是ConfirmTemplate',
-                text='這就是ConfirmTemplate,用於兩種按鈕選擇',
-                actions=[                              
-                    URITemplateAction(
-                        label='看教學影片',
-                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
-                    ),
-                    URITemplateAction(
-                        label='去雲端找講義',
-                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
-                    )
-                ]
-            )
-        )
+        replay_message(event,Confirm_Template)
+        return 0
 
 
     replay_message(event,Buttons_Template)
