@@ -222,81 +222,81 @@ def handle_message(event):
     #     )
     # )
 
-    Image_Carousel = TemplateSendMessage(
-        alt_text='目錄 template',
-        template=ImageCarouselTemplate(
-            columns=[
-                ImageCarouselColumn(
-                    image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-                    action=PostbackTemplateAction(
-                        label='postback1',
-                        text='postback text1',
-                        data='action=buy&itemid=1'
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-                    action=PostbackTemplateAction(
-                        label='postback2',
-                        text='postback text2',
-                        data='action=buy&itemid=2'
-                    )
-                )
-            ]
-        )
-    )
-
-    replay_message(event,Image_Carousel)
-
-    # if event.message.text.find("海報(<-解答點我)")>=0:
-    # 	Imagemap_Message = ImagemapSendMessage(
-    #         base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
-    #         alt_text='this is an imagemap',
-    #         base_size=BaseSize(height=1040, width=1040),
-    #         actions=[
-    #             URIImagemapAction(
-    #                 link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
-    #                 area=ImagemapArea(
-    #                     x=0, y=0, width=520, height=1040
+    # Image_Carousel = TemplateSendMessage(
+    #     alt_text='目錄 template',
+    #     template=ImageCarouselTemplate(
+    #         columns=[
+    #             ImageCarouselColumn(
+    #                 image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #                 action=PostbackTemplateAction(
+    #                     label='postback1',
+    #                     text='postback text1',
+    #                     data='action=buy&itemid=1'
     #                 )
     #             ),
-    #             MessageImagemapAction(
-    #                 text='hello',
-    #                 area=ImagemapArea(
-    #                     x=520, y=0, width=520, height=1040
+    #             ImageCarouselColumn(
+    #                 image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+    #                 action=PostbackTemplateAction(
+    #                     label='postback2',
+    #                     text='postback text2',
+    #                     data='action=buy&itemid=2'
     #                 )
-    #             )
-    #         ]
-    #     )
-    #     replay_message(event,Imagemap_Message)
-    #     return 0
-
-
-    # Buttons_Template = TemplateSendMessage(
-    #     alt_text='Buttons Template',
-    #     template=ButtonsTemplate(
-    #         title='這是ButtonsTemplate',
-    #         text='ButtonsTemplate可以傳送text,uri',
-    #         thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
-    #         actions=[
-    #             MessageTemplateAction(
-    #                 label='海報(<-解答點我)',
-    #                 text='海報(<-解答點我)'
-    #             ),
-    #             MessageTemplateAction(
-    #                 label='微積分習題',
-    #                 text='微積分習題'
-    #             ),
-    #             MessageTemplateAction(
-    #                 label='講義',
-    #                 text='講義'
     #             )
     #         ]
     #     )
     # )
 
+    # replay_message(event,Image_Carousel)
 
-    # replay_message(event,Buttons_Template)
+    if event.message.text.find("海報(<-解答點我)")>=0:
+    	Imagemap_Message = ImagemapSendMessage(
+            base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+            alt_text='this is an imagemap',
+            base_size=BaseSize(height=1040, width=1040),
+            actions=[
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=0, y=0, width=520, height=1040
+                    )
+                ),
+                MessageImagemapAction(
+                    text='hello',
+                    area=ImagemapArea(
+                        x=520, y=0, width=520, height=1040
+                    )
+                )
+            ]
+        )
+        replay_message(event,Imagemap_Message)
+        return 0
+
+
+    Buttons_Template = TemplateSendMessage(
+        alt_text='Buttons Template',
+        template=ButtonsTemplate(
+            title='這是ButtonsTemplate',
+            text='ButtonsTemplate可以傳送text,uri',
+            thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+            actions=[
+                MessageTemplateAction(
+                    label='海報(<-解答點我)',
+                    text='海報(<-解答點我)'
+                ),
+                MessageTemplateAction(
+                    label='微積分習題',
+                    text='微積分習題'
+                ),
+                MessageTemplateAction(
+                    label='講義',
+                    text='講義'
+                )
+            ]
+        )
+    )
+
+
+    replay_message(event,Buttons_Template)
 
 
 def replay_message(event,text):
