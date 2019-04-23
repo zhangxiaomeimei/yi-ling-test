@@ -298,6 +298,90 @@ def handle_message(event):
         replay_message(event,Imagemap_Message)
         return 0
 
+    if event.message.text == "微積分習題":
+        Imagemap_Message = ImagemapSendMessage(
+            base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+            alt_text='this is an imagemap',
+            base_size=BaseSize(height=1040, width=1040),
+            actions=[
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=0, y=0, width=520, height=1040
+                    )
+                ),
+                MessageImagemapAction(
+                    text='hello',
+                    area=ImagemapArea(
+                        x=520, y=0, width=520, height=1040
+                    )
+                )
+            ]
+        )
+        replay_message(event,Imagemap_Message)
+        return 0
+
+    if event.message.text == "講義":
+        Imagemap_Message = ImagemapSendMessage(
+            base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+            alt_text='this is an imagemap',
+            base_size=BaseSize(height=1040, width=1040),
+            actions=[
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=0, y=0, width=520, height=1040
+                    )
+                ),
+                MessageImagemapAction(
+                    text='OOO老師',
+                    area=ImagemapArea(
+                        x=520, y=0, width=520, height=1040
+                    )
+                )
+            ]
+        )
+        replay_message(event,Imagemap_Message)
+        return 0
+
+    if event.message.text == "OOO老師":
+    	Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='這就是ConfirmTemplate,用於兩種按鈕選擇',
+                actions=[                              
+                    MessageTemplateAction(
+                        label='看教學影片',
+                        text='看教學影片'
+                    ),
+                    MessageTemplateAction(
+                        label='去雲端找講義',
+                        text='去雲端找講義'
+                    )
+                ]
+            )
+        )
+
+    if event.message.text == "看教學影片":
+    	Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='這就是ConfirmTemplate,用於兩種按鈕選擇',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+                    )
+                ]
+            )
+        )
+
 
     replay_message(event,Buttons_Template)
 
