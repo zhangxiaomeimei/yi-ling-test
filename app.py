@@ -358,9 +358,9 @@ def handle_message(event):
                         data='action=buy&itemid=1'
 
                     ),
-                    MessageTemplateAction(
+                    URITemplateActio(
                         label='N',
-                        text='N'
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
                     )
                 ]
             )
