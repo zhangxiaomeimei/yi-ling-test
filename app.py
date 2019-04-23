@@ -344,8 +344,12 @@ def handle_message(event):
         replay_message(event,Imagemap_Message)
         return 0
 
+
+    replay_message(event,Buttons_Template)
+
+
     if event.message.text == "嗨老師":
-    	Buttons_Template = TemplateSendMessage(
+        Buttons_Template = TemplateSendMessage(
             alt_text='Buttons Template',
             template=ButtonsTemplate(
                 title='這是ButtonsTemplate',
@@ -366,7 +370,7 @@ def handle_message(event):
         replay_message(event,Buttons_Template)
         return 0
 
-    replay_message(event,Buttons_Template)
+
 
 
 def replay_message(event,text):
