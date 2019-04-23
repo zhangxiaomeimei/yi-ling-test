@@ -334,7 +334,7 @@ def handle_message(event):
                     )
                 ),
                 MessageImagemapAction(
-                    text='OOO老師',
+                    text='嗨老師',
                     area=ImagemapArea(
                         x=520, y=0, width=520, height=1040
                     )
@@ -344,7 +344,7 @@ def handle_message(event):
         replay_message(event,Imagemap_Message)
         return 0
 
-    if event.message.text == "OOO老師":
+    if event.message.text == "嗨老師":
     	Confirm_Template = TemplateSendMessage(
             alt_text='目錄 template',
             template=ConfirmTemplate(
