@@ -345,9 +345,6 @@ def handle_message(event):
         return 0
 
 
-    replay_message(event,Buttons_Template)
-
-
     if event.message.text == "嗨老師":
         Confirm_Template = TemplateSendMessage(
             alt_text='目錄 template',
@@ -372,7 +369,7 @@ def handle_message(event):
         return 0
 
 
-
+    replay_message(event,Buttons_Template)
 
 def replay_message(event,text):
     #text = 'According to your input, my answer is ' + text
