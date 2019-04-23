@@ -351,7 +351,6 @@ def handle_message(event):
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
                 text='嗨老師',
-                thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
