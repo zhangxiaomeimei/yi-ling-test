@@ -277,7 +277,7 @@ def handle_message(event):
 
     if event.message.text == "海報(<-解答點我)":
         Imagemap_Message = ImagemapSendMessage(
-            base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png',
+            base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png?',
             alt_text='this is an imagemap',
             base_size=BaseSize(height=377, width=953),
             actions=[
