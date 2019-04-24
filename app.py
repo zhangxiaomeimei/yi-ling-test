@@ -322,6 +322,12 @@ def handle_message(event):
                     area=ImagemapArea(
                         x=600, y=0, width=1010, height=520
                     )
+                ),
+                MessageImagemapAction(
+                    text='hello22',
+                    area=ImagemapArea(
+                        x=600, y=0, width=1010, height=520
+                    )
                 )
             ]
         )
@@ -337,13 +343,7 @@ def handle_message(event):
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                     area=ImagemapArea(
-                        x=0, y=0, width=520, height=1040
-                    )
-                ),
-                MessageImagemapAction(
-                    text='嗨老師',
-                    area=ImagemapArea(
-                        x=520, y=0, width=520, height=1040
+                        x=0, y=0, width=300, height=420
                     )
                 )
             ]
