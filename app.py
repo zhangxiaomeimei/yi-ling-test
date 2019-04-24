@@ -256,7 +256,7 @@ def handle_message(event):
         template=ButtonsTemplate(
             title='這是ButtonsTemplate',
             text='ButtonsTemplate可以傳送text,uri',
-            thumbnail_image_url='https://www.google.com.tw/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+            thumbnail_image_url='https://math-2019.000webhostapp.com/logo.jpg',
             actions=[
                 MessageTemplateAction(
                     label='海報(<-解答點我)',
