@@ -279,7 +279,7 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=377, width=953),
+            base_size=BaseSize(height=400, width=1000),
             actions=[
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
