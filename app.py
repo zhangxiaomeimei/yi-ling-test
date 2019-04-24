@@ -279,7 +279,7 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/poster.png#',
             alt_text='this is an imagemap',
-            #base_size=BaseSize(height=114, width=286),
+            base_size=BaseSize(height=377, width=953),
             actions=[
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
