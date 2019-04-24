@@ -303,7 +303,7 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/teacherlist.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=510, width=1000),
+            base_size=BaseSize(height=520, width=1010),
             actions=[
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
