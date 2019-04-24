@@ -277,7 +277,8 @@ def handle_message(event):
 
     if event.message.text == "海報(<-解答點我)":
         Imagemap_Message = ImagemapSendMessage(
-            base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png?',
+            #base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png?',
+            base_url='https://math-2019.000webhostapp.com/poster.png?',
             alt_text='this is an imagemap',
             base_size=BaseSize(height=400, width=1100),
             actions=[
@@ -300,9 +301,9 @@ def handle_message(event):
 
     if event.message.text == "微積分習題":
         Imagemap_Message = ImagemapSendMessage(
-            base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+            base_url='https://math-2019.000webhostapp.com/teacherlist.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=1040, width=1040),
+            base_size=BaseSize(height=400, width=1000),
             actions=[
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
@@ -323,9 +324,9 @@ def handle_message(event):
 
     if event.message.text == "講義":
         Imagemap_Message = ImagemapSendMessage(
-            base_url='https://www.kamigo.tw/assets/kamigo-c3b10dff4cdb60fa447496b22edad6c32fffde96de20262efba690892e4461e8.png#',
+            base_url='https://math-2019.000webhostapp.com/handout.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=1040, width=1040),
+            base_size=BaseSize(height=400, width=1100),
             actions=[
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
