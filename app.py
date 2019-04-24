@@ -308,13 +308,19 @@ def handle_message(event):
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                     area=ImagemapArea(
-                        x=0, y=0, width=1010, height=520
+                        x=0, y=0, height=520, width=1010 
                     )
                 ),
                 MessageImagemapAction(
                     text='hello',
                     area=ImagemapArea(
-                        x=520, y=0, width=1010, height=520
+                        x=300, y=0, width=1010, height=520
+                    )
+                ),
+                MessageImagemapAction(
+                    text='hello',
+                    area=ImagemapArea(
+                        x=600, y=0, width=1010, height=520
                     )
                 )
             ]
