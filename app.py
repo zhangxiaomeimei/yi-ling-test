@@ -280,18 +280,60 @@ def handle_message(event):
             #base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png?',
             base_url='https://math-2019.000webhostapp.com/poster.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=410, width=1100),
+            base_size=BaseSize(height=420, width=1000),
             actions=[
-                URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                MessageImagemapAction(
+                    text='第一題',
                     area=ImagemapArea(
-                        x=0, y=0, width=520, height=1040
+                        x=25, y=25, width=265, height=90
                     )
                 ),
                 MessageImagemapAction(
-                    text='hello',
+                    text='第二題',
                     area=ImagemapArea(
-                        x=520, y=0, width=520, height=1040
+                        x=345, y=25, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第三題',
+                    area=ImagemapArea(
+                        x=665, y=25, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第四題',
+                    area=ImagemapArea(
+                        x=25, y=145, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第五題',
+                    area=ImagemapArea(
+                        x=345, y=145, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第六題',
+                    area=ImagemapArea(
+                        x=665, y=145, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第七題',
+                    area=ImagemapArea(
+                        x=25, y=265, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第八題',
+                    area=ImagemapArea(
+                        x=345, y=265, width=265, height=90
+                    )
+                ),
+                MessageImagemapAction(
+                    text='第九題',
+                    area=ImagemapArea(
+                        x=665, y=265, width=265, height=90
                     )
                 )
             ]
@@ -314,19 +356,19 @@ def handle_message(event):
                 MessageImagemapAction(
                     text='hello',
                     area=ImagemapArea(
-                        x=300, y=0, width=1010, height=520
+                        x=300, y=0, height=520, width=1010
                     )
                 ),
                 MessageImagemapAction(
                     text='hello22',
                     area=ImagemapArea(
-                        x=600, y=0, width=1010, height=520
+                        x=600, y=0, height=520, width=1010
                     )
                 ),
                 MessageImagemapAction(
                     text='hello22',
                     area=ImagemapArea(
-                        x=600, y=0, width=1010, height=520
+                        x=600, y=0, height=520, width=1010
                     )
                 )
             ]
@@ -343,13 +385,13 @@ def handle_message(event):
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                     area=ImagemapArea(
-                        x=0, y=0, width=300, height=120
+                        x=0, y=0, height=120,width=300
                     )
                 ),
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                     area=ImagemapArea(
-                        x=600, y=360, width=300, height=120
+                        x=600, y=360, height=120, width=300
                     )
                 )
             ]
