@@ -280,7 +280,7 @@ def handle_message(event):
             #base_url='https://jylin.myqnapcloud.com/Projects/year201901/poster.png?',
             base_url='https://math-2019.000webhostapp.com/poster.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=520, width=1010),
+            base_size=BaseSize(height=377, width=953),
             actions=[
                 MessageImagemapAction(
                     text='第一題',
