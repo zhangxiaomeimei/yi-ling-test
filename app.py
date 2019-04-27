@@ -279,7 +279,7 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/poster.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=400, width=1000),
+            base_size=BaseSize(width=1000, height=400),
             actions=[
                 MessageImagemapAction(
                     text='第一題',
@@ -344,30 +344,78 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/teacherlist.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=520, width=1010),
+            base_size=BaseSize(width=1010, height=520),
             actions=[
-                URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                MessageImagemapAction(
+                    text='林仁彥老師',
                     area=ImagemapArea(
-                        x=0, y=0, height=520, width=1010 
+                        x=50, y=40, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
-                    text='hello',
+                    text='陳嘉文老師',
                     area=ImagemapArea(
-                        x=300, y=0, height=520, width=1010
+                        x=600, y=0, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
-                    text='hello22',
+                    text='陳琴韻老師',
                     area=ImagemapArea(
-                        x=600, y=0, height=520, width=1010
+                        x=600, y=0, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
-                    text='hello22',
+                    text='彭振昌老師',
                     area=ImagemapArea(
-                        x=600, y=0, height=520, width=1010
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='鄭富國老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='陳榮治老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='莊智升老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='吳忠武老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='陳昇國老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='顏志弘老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='胡承方老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
+                    )
+                ),
+                MessageImagemapAction(
+                    text='鄭博仁老師',
+                    area=ImagemapArea(
+                        x=50, y=40, width=288, height=95
                     )
                 )
             ]
