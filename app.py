@@ -355,67 +355,67 @@ def handle_message(event):
                 MessageImagemapAction(
                     text='陳嘉文老師',
                     area=ImagemapArea(
-                        x=600, y=0, width=288, height=95
+                        x=380, y=40, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='陳琴韻老師',
                     area=ImagemapArea(
-                        x=600, y=0, width=288, height=95
+                        x=708, y=40, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='彭振昌老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=50, y=163, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='鄭富國老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=380, y=163, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='陳榮治老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=708, y=163, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='莊智升老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=50, y=286, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='吳忠武老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=380, y=286, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='陳昇國老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=708, y=286, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='顏志弘老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=50, y=410, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='胡承方老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=380, y=410, width=288, height=95
                     )
                 ),
                 MessageImagemapAction(
                     text='鄭博仁老師',
                     area=ImagemapArea(
-                        x=50, y=40, width=288, height=95
+                        x=708, y=410, width=288, height=95
                     )
                 )
             ]
