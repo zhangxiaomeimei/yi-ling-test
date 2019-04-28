@@ -277,7 +277,7 @@ def handle_message(event):
 
     if event.message.text == "海報(<-解答點我)":
         Imagemap_Message = ImagemapSendMessage(
-            base_url='https://math-2019.000webhostapp.com/poster.png?',
+            base_url='https://math-2019.000webhostapp.com/1040.png?',
             alt_text='this is an imagemap',
             base_size=BaseSize(width=1060, height=400),
             actions=[
