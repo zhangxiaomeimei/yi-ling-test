@@ -507,7 +507,7 @@ def handle_message(event):
         return 0
 
 
-    if event.message.text == "嗨老師":
+    if event.message.text == "林仁彥老師":
         Confirm_Template = TemplateSendMessage(
             alt_text='目錄 template',
             template=ConfirmTemplate(
