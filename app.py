@@ -427,18 +427,78 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/HandOut.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(height=570, width=1044),
+            base_size=BaseSize(width=1044, height=570),
             actions=[
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                     area=ImagemapArea(
-                        x=0, y=0, height=120,width=300
+                        x=15, y=27, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
                     link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
                     area=ImagemapArea(
-                        x=600, y=360, height=120, width=300
+                        x=370, y=27, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=720, y=27, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=15, y=166, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=370, y=166, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=720, y=166, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=15, y=307, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=370, y=307, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=720, y=307, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=15, y=444, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=370, y=444, width=307, height=102
+                    )
+                ),
+                URIImagemapAction(
+                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    area=ImagemapArea(
+                        x=720, y=444, width=307, height=102
                     )
                 )
             ]
