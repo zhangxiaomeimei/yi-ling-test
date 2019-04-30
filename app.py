@@ -279,7 +279,7 @@ def handle_message(event):
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/poster_.png?',
             alt_text='this is an imagemap',
-            base_size=BaseSize(width=2000, height=500),
+            base_size=BaseSize(width=2000, height=600),
             actions=[
                 MessageImagemapAction(
                     text='第一題',
