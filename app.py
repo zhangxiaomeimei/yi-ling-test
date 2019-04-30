@@ -430,7 +430,6 @@ def handle_message(event):
             base_size=BaseSize(width=1044, height=570),
             actions=[
                 URIImagemapAction(
-                	text='鄭博仁老師',
                     link_uri='https://www.youtube.com/watch?v=_yqhI8HQlOE',
                     area=ImagemapArea(
                         x=15, y=27, width=307, height=102
