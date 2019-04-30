@@ -341,6 +341,8 @@ def handle_message(event):
         return 0
 
     if event.message.text == "講義":
+    	message = TextSendMessage(text='請選擇老師：')
+    	replay_message(event,message)
         Imagemap_Message = ImagemapSendMessage(
             base_url='https://math-2019.000webhostapp.com/teacherlist.png?',
             alt_text='this is an imagemap',
@@ -511,7 +513,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -533,7 +535,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -555,7 +557,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -577,7 +579,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -599,7 +601,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -621,7 +623,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -643,7 +645,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -665,7 +667,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -687,7 +689,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -709,7 +711,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -731,7 +733,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
@@ -753,7 +755,7 @@ def handle_message(event):
             alt_text='目錄 template',
             template=ConfirmTemplate(
                 title='這是ConfirmTemplate',
-                text='嗨老師',
+                text='您有什麼需求？',
                 actions=[                              
                     URITemplateAction(
                         label='看教學影片',
