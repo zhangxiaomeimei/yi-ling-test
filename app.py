@@ -430,73 +430,73 @@ def handle_message(event):
             base_size=BaseSize(width=1044, height=570),
             actions=[
                 URIImagemapAction(
-                    link_uri='file:///C:/Users/User/Desktop/%E5%87%BD%E6%95%B8%E6%A5%B5%E9%99%90.html',
+                    link_uri='https://www.youtube.com/watch?v=_yqhI8HQlOE',
                     area=ImagemapArea(
                         x=15, y=27, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=OtEJ6LGCW-U',
                     area=ImagemapArea(
                         x=370, y=27, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=bu7nU9Mhpyo',
                     area=ImagemapArea(
                         x=720, y=27, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=BVK_Q6KZSUI',
                     area=ImagemapArea(
                         x=15, y=166, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=Dnj5Tcpev0Q&list=RDY2ge3KrdeWs&index=5',
                     area=ImagemapArea(
                         x=370, y=166, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=ma7r2HGqwXs',
                     area=ImagemapArea(
                         x=720, y=166, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=GuqY5OViunk&list=RDma7r2HGqwXs&index=13',
                     area=ImagemapArea(
                         x=15, y=307, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=5DKNU34L5DA&list=RDma7r2HGqwXs&index=32',
                     area=ImagemapArea(
                         x=370, y=307, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=lUCa4e5Mkrc',
                     area=ImagemapArea(
                         x=720, y=307, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ',
                     area=ImagemapArea(
                         x=15, y=444, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=GCgvpwLNvtY&list=RDma7r2HGqwXs&index=23',
                     area=ImagemapArea(
                         x=370, y=444, width=307, height=102
                     )
                 ),
                 URIImagemapAction(
-                    link_uri='https://ithelp.ithome.com.tw/m/articles/10198142',
+                    link_uri='https://www.youtube.com/watch?v=T4SimnaiktU&list=RDma7r2HGqwXs&index=18',
                     area=ImagemapArea(
                         x=720, y=444, width=307, height=102
                     )
