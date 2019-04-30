@@ -284,55 +284,55 @@ def handle_message(event):
                 MessageImagemapAction(
                     text='第一題',
                     area=ImagemapArea(
-                        x=25, y=25, width=265, height=90
+                        x=13, y=15, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第二題',
                     area=ImagemapArea(
-                        x=345, y=25, width=265, height=90
+                        x=392, y=15, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第三題',
                     area=ImagemapArea(
-                        x=665, y=25, width=265, height=90
+                        x=765, y=15, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第四題',
                     area=ImagemapArea(
-                        x=25, y=145, width=265, height=90
+                        x=13, y=158, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第五題',
                     area=ImagemapArea(
-                        x=345, y=145, width=265, height=90
+                        x=392, y=158, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第六題',
                     area=ImagemapArea(
-                        x=665, y=145, width=265, height=90
+                        x=765, y=158, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第七題',
                     area=ImagemapArea(
-                        x=25, y=265, width=265, height=90
+                        x=13, y=303, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第八題',
                     area=ImagemapArea(
-                        x=345, y=265, width=265, height=90
+                        x=392, y=303, width=312, height=107
                     )
                 ),
                 MessageImagemapAction(
                     text='第九題',
                     area=ImagemapArea(
-                        x=665, y=265, width=265, height=90
+                        x=765, y=303, width=312, height=107
                     )
                 )
             ]
