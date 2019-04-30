@@ -255,7 +255,7 @@ def handle_message(event):
         alt_text='Buttons Template',
         template=ButtonsTemplate(
             title='Hello~歡迎問微微各種關於微積分的問題喔~',
-            text='Hi!',
+            text=' ',
             thumbnail_image_url='https://math-2019.000webhostapp.com/LOGO.jpg',
             actions=[
                 MessageTemplateAction(
