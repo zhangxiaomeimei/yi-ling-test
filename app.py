@@ -342,7 +342,7 @@ def handle_message(event):
 
     if event.message.text == "講義":
         Imagemap_Message = ImagemapSendMessage(
-            base_url='https://math-2019.000webhostapp.com/teacherlist.png?',
+            base_url='https://math-2019.000webhostapp.com/Teacherlist.png?',
             alt_text='this is an imagemap',
             base_size=BaseSize(width=1061, height=540),
             actions=[
