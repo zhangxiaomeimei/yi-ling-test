@@ -254,8 +254,8 @@ def handle_message(event):
     Buttons_Template = TemplateSendMessage(
         alt_text='Buttons Template',
         template=ButtonsTemplate(
-            title='這是ButtonsTemplate',
-            text='ButtonsTemplate可以傳送text,uri',
+            title='Hello:-)~歡迎問微微各種關於微積分的問題喔~',
+            text='',
             thumbnail_image_url='https://math-2019.000webhostapp.com/LOGO.jpg',
             actions=[
                 MessageTemplateAction(
