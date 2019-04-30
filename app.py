@@ -506,8 +506,249 @@ def handle_message(event):
         replay_message(event,Imagemap_Message)
         return 0
 
-
     if event.message.text == "林仁彥老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/?gl=TW&hl=zh-tw'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://drive.google.com/drive/u/1/folders/1Qs_CzVp4xqymmYveDV9IqSwYApjgzjfb'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "陳嘉文老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "陳琴韻老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "彭振昌老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "鄭富國老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "陳榮治老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "莊智升老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "吳忠武老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "陳昇國老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "嚴志弘老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "胡承方老師":
+        Confirm_Template = TemplateSendMessage(
+            alt_text='目錄 template',
+            template=ConfirmTemplate(
+                title='這是ConfirmTemplate',
+                text='嗨老師',
+                actions=[                              
+                    URITemplateAction(
+                        label='看教學影片',
+                        uri='https://www.youtube.com/watch?v=YKiMrg6rgYQ'
+
+                    ),
+                    URITemplateAction(
+                        label='去雲端找講義',
+                        uri='https://www.youtube.com/watch?v=GuqY5OViunk'
+                    )
+                ]
+            )
+        )
+        replay_message(event,Confirm_Template)
+        return 0
+
+    if event.message.text == "鄭博仁老師":
         Confirm_Template = TemplateSendMessage(
             alt_text='目錄 template',
             template=ConfirmTemplate(
